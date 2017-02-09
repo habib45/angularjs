@@ -1,0 +1,22 @@
+.hb-maincontent{
+            border: 1px #EEE solid;
+            min-height: 500px;
+            width: 100%;
+            padding: 0px;
+        }
+        .padding0{
+            padding: 0px;
+           
+        }
+        .header{
+
+           
+        }
+        .middle{
+           min-height: 400px; 
+           background-color: white;
+        }
+        .footer{
+        min-height: 80px;
+        background-color: slategrey;
+        }
