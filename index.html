@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"  ng-app="scotchApp">
     <head>
-        <title>Hello Angularjs</title>
-     <!-- SCROLLS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
-  <!-- SPELLS -->
-  <script src="app/asset/js/angular.min.js"></script>
-  <script src="app/asset/js/angular-route.js"></script>
-  <script src="app/asset/js/"></script>
- 
-        <link rel="stylesheet" href="app/asset/css/style.css">
+        <title>{{ title }}::Welcome To Angularjs</title>
+        <!-- SCROLLS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+     <link rel="stylesheet" href="app/asset/css/style.css">
     </head>
-    <body ng-controller="mainController">
+    <body>
         <div  class="row">
             <div class="container">
                 <div class="col-md-12 col-lg-12 col-sm-12 hb-maincontent">
@@ -34,9 +28,11 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
-                                       <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                                        <li><a href="#"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                                        <li><a href="#about"><i class="fa fa-shield"></i> &nbsp;About</a></li>
+                                        <li><a href="#contact"><i class="fa fa-comment"></i> &nbsp;Contact</a></li>
+                                        <li><a href="#registration"><i class="fa fa-lock"></i> &nbsp;Sign up</a></li>
+                                        <li><a href="#viewUser"><i class="fa fa-lock"></i> &nbsp;View All User</a></li>
 
                                     </ul>
 
@@ -48,20 +44,19 @@
                         </nav>
                     </div>
                     <div class="col-md-12 col-sm-12 padding0 middle">
-                          <div ng-view></div>
-           
+                        <div ng-view></div>
+
                     </div>
                     <div class="col-md-12 col-sm-12 padding0 footer">
                     </div>
                 </div>
             </div>
         </div>
-
-    <script src="app/asset/js/bootstrap.min.js" ></script>
-    <script src="app/asset/js/bootstrap.js" ></script>
-<!--    <script src="app/asset/js/app.js" ></script>
-    <script src="app/asset/js/config.js" ></script>-->
-    <script src="app/asset/js/script.js" ></script>
-
+        <script src="app/asset/js/angular.min.js"></script>
+        <script src="app/asset/js/angular-route.js"></script>
+        <script src="app/asset/js/bootstrap.min.js" ></script>
+        <script src="app/asset/js/bootstrap.js" ></script>
+        <script src="app/asset/js/app.js" ></script>
+        <script src="app/asset/js/config.js" ></script>
 </body>
 </html>
